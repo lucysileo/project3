@@ -1,0 +1,172 @@
+/*
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+    background-color: #a27823;
+}
+
+
+
+div h1{
+    color:aliceblue;
+    background-color: #1976d2;
+    width: 200vh;
+    height: 20vh;
+    display: flex;
+    font-size: 10vh;
+}
+#puzzle_container {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    background-color: #382c26;
+    border-radius: 8px;
+    border: 1px solid #f66029;
+    box-shadow: 0px 8px 0px #f66029;
+
+}
+
+
+.puzzle_block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 25%;
+    background-color: #878b60;
+    color: #cdd356;
+    font-size: 10vh;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition: left 0.3s, top 0.3s;
+
+
+}
+
+#levels {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: 10vh;
+    background-color: #382c26;
+    border-radius: 8px;
+    margin-top: 22px;
+
+
+
+}
+
+.level {
+    flex-grow: 1;
+    background-color: inherit;
+    color: #f3e221;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-top: 3%;
+    margin: 10px;
+    cursor: pointer;
+    transition: font-size 0.3s;
+
+
+}
+
+.level:hover {
+    opacity: 0.8;
+    font-size: 4.5vh;
+}
+
+.level.active {
+    background-color: inherit;
+    color: #aea190;
+}
+
+ul#puzzle_container {
+    list-style-type: none;
+}
+
+*/
+
+body {
+	background-color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+#levels,
+#overall,
+#puzzlearea {
+	width: 400px;
+}
+
+#levels {
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1 {
+	margin: 10px 0px;
+	text-align: center;
+    background-color: coral;
+    color:white;
+    font-size: 40pt;
+}
+
+h2{
+    
+    color: purple;
+    font-size:10pt;
+}
+
+/* Used to center the puzzle. */
+#overall {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzle_container {
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+    align-items: center;
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzle_block {
+ 
+	border: 2px solid black;
+	height: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 96px;
+}
+
+
+
+
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: red;
+	color: #006600;
+	text-decoration: underline;
+}
+
