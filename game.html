@@ -9,57 +9,43 @@
 </head>
 <body>
 <div>
-    <h1>15 PUZZLE GAME</h1>
+    <div><h1>15 PUZZLE GAME</h1></div>
     <h2>Choose picture:</h2>
     <div>
-        <select>
-            <option>Pic1</option>
-            <option>Pic2</option>
-            <option>Pic3</option>
-            <option>Pic4</option>
+        <select id="picture">
+            <option value = "pic1">Pic1</option>
+            <option value = "pic2">Pic2</option>
+            <option value = "pic3">Pic3</option>
+            <option value = "pic4">Pic4</option>
         </select>
     </div>
-    <h2>Choose size:</h2>
+
+    <h2>Choose Size:</h2>
     <div>
-        <select>
-            <option>Size1</option>
-            <option>Size2</option>
-            <option>Size3</option>
-            <option>Size4</option>
+        <select id="size">
+            <option value = "3">3x3</option>
+            <option value = "4">4x4</option>
+            <option value = "5">5x5</option>
         </select>
     </div>
 
+
+<br>
+
+<div>
+
+<button id = "play" onclick="play()">Play</button>
+<button id = "reset" onclick="reset()">Reset</button>
 </div>
-
-<div>Timer:</div>
-
-
-<ul id="puzzle_container">
-    <div class="puzzle_block">1</div>
-    <div class="puzzle_block">2</div>
-    <div class="puzzle_block">3</div>
-    <div class="puzzle_block">4</div>
-    <div class="puzzle_block">5</div>
-    <div class="puzzle_block">6</div>
-    <div class="puzzle_block">7</div>
-    <div class="puzzle_block">8</div>
-    <div class="puzzle_block">9</div>
-    <div class="puzzle_block">10</div>
-    <div class="puzzle_block">11</div>
-    <div class="puzzle_block">12</div>
-    <div class="puzzle_block">13</div>
-    <div class="puzzle_block">14</div>
-    <div class="puzzle_block">15</div>
-
-</ul>
+<div>Timer: <p id="timer"></p></div>
 
 
-<div id="levels">
-    <div class="level"><button>Shuffle</button></div>
+<div id="shuffle">
+    <div class="shuffle" ><button>Shuffle</button></div>
    
 </div>
 
-
+</div>
 
 <script src="fifteen.js"></script>
 
