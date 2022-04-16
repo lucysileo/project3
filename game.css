@@ -3,7 +3,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
-#shuffle,
+
 #overall,
 #puzzle_container {
 	width: 400px;
@@ -45,7 +45,7 @@ h2{
 	padding: 0px;
 	position: relative;
     align-items: center;
-	margin-left: 814px;
+	margin: auto;
 }
 
 /* This class should be applied to each of the 15 puzzle pieces. */
@@ -72,13 +72,3 @@ ul{
 	color: #006600;
 	text-decoration: underline;
 }
-
-#seconds {
-    font-size: 5em;}
-  
-  #minutes {
-    font-size: 5em;
-  }
-  #colon {
-    font-size: 5em;
-  }

@@ -18,22 +18,31 @@ function reset(){
     document.getElementById("play").disabled = false;
     location.reload(); 
 }
+
+var timerVar;
 function play(){
+
+document.getElementById("time").style.display = "block";
 document.getElementById("shuffle").style.display = "block";
 document.getElementById("play").disabled = true;
 AUDIO.play();
-
+timerVar = setInterval(countTimer, 1000);
 var totalSeconds = 0;
- var timerVariable = setInterval(countUpTimer, 1000); 
-function countUpTimer(){
+function countTimer() {
+           ++totalSeconds;
+           var hour = Math.floor(totalSeconds /3600);
+           var minute = Math.floor((totalSeconds - hour*3600)/60);
+           var seconds = totalSeconds - (hour*3600 + minute*60);
+           if(hour < 10)
+             hour = "0"+hour;
+           if(minute < 10)
+             minute = "0"+minute;
+           if(seconds < 10)
+             seconds = "0"+seconds;
+           document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
+        }
 
-  totalSeconds++;
-  hour = Math.floor(totalSeconds / 3600);
-  minute = Math.floor((totalSeconds - hour * 3600) / 60);
-  seconds = totalSeconds - (hour * 3600 + minute * 60);
-  document.getElementById("timer").innerHTML = hour + ":" + minute + ":" + seconds;
-}
-
+    
 
 var image;
 var rows= document.getElementById("size").value;
@@ -122,15 +131,12 @@ class Game {
         this.gameboard.push(this.count - 1);
         this.shuffle(1000);
     }
-
     
 
     onClickOnBlock(blockIdx) { //try move block and check if puzzle was solved
         if (this.moveBlock(blockIdx)) {
             if (this.checkPuzzleSolved()) {
                 setTimeout(() => alert("Puzzle Solved!!"), 600);
-                countUpTimer();
-                AUDIO.clear();
             }
         }
     }
@@ -186,6 +192,11 @@ class Game {
             if (i == this.emptyBlockCoords[0] + this.emptyBlockCoords[1] * this.cols) continue;
             if (this.gameboard[i] != i) return false;
         }
+        clearInterval(timerVar);
+        Audio.prototype.stop = function() {
+            this.pause();
+            this.currentTime = 0;
+        };
         return true;
     }
    
