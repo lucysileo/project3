@@ -12,7 +12,8 @@
 
 <div>
     <div><h1>SLIDE PUZZLE GAME</h1></div>
-    <div>   
+    <div>  
+        <!--Choose picture--> 
         <div>
             <h2>Choose picture:</h2>
             <select id="picture">
@@ -22,7 +23,7 @@
                 <option value = "pic4">Pic4</option>
             </select>
         </div>
-
+        <!--Choose size-->
     <div>
             <h2>Choose Size:</h2>
             <select id="size">
@@ -33,14 +34,16 @@
     </div>
     </div>
 
+    <!--Play/Reset button-->
     <div>
         <button id = "play" onclick="play()">Play</button>
         <button id = "reset" onclick="reset()">Reset</button>
     </div>
 
-
+    <!--Time count-->
     <div id="time"><p id="timer"></p></div>
 
+    <!--shuffle button-->
     <div id="shuffle">
         <div class="shuffle" ><button>Shuffle</button></div>
     </div>
@@ -50,6 +53,7 @@
 
 <script src="fifteen.js"></script>
 
+<!--CSS/HTML check validtor-->
 <div id="w3c">
     <a href="https://jigsaw.w3.org/css-validator/"><img src="w3c-css.png" alt="Valid CSS"></a>
     <a href="https://validator.w3.org/"><img src="w3c-xhtml.png" alt="Valid HTML"></a>

@@ -26,7 +26,7 @@ body {
 	text-align: center;
 
 }
-
+/* title game*/
 h1{
 text-align: center;
 font-family: cursive;
@@ -43,14 +43,16 @@ div{
 	text-align: center;
 }
 
+/* for image/size */
 h2{
     color: purple;
     font-size:18pt;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
 }
+/* some feature for play/reset/shuffle */
 button{
-	background-color: coral; /* Green */
+	background-color: coral;
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -68,8 +70,9 @@ button:hover{
 	color: #ffd154;
 	background-color: #3d3d3d ;
 }
+
 select {
-	background-color: rgb(240, 243, 37); /* Green */
+	background-color: rgb(240, 243, 37);
 	border: none;
 	color: rgb(18, 18, 248);
 	padding: 10px 28px;
@@ -83,7 +86,7 @@ select {
 #time{
 	color:white;
   }
-/* The area that holds the 15 puzzle pieces. */
+/* The area that holds the puzzle pieces. */
 #tile_con {
 	font-size: 32pt;
 	height: 400px;
@@ -94,7 +97,7 @@ select {
 	width:400px;
 }
 
-/* This class should be applied to each of the 15 puzzle pieces. */
+/* This class should be applied to each of the puzzle pieces depend on size. */
 .tiles {
  
 	border: 2px solid black;
