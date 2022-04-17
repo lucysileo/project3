@@ -4,49 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favi.jpg">
     <link rel="stylesheet" type= "text/css" href="game.css" >
-    <title>15 Puzzle Game</title>
+    <title>Slide Puzzle Game</title>
 </head>
 <body>
-<div>
-    <div><h1>15 PUZZLE GAME</h1></div>
-    <h2>Choose picture:</h2>
-    <div>
-        <select id="picture">
-            <option value = "pic1">Pic1</option>
-            <option value = "pic2">Pic2</option>
-            <option value = "pic3">Pic3</option>
-            <option value = "pic4">Pic4</option>
-        </select>
-    </div>
-
-    <h2>Choose Size:</h2>
-    <div>
-        <select id="size">
-            <option value = "3">3x3</option>
-            <option value = "4">4x4</option>
-            <option value = "5">5x5</option>
-        </select>
-    </div>
-
-
-<br>
 
 <div>
-    <button id = "play" onclick="play()">Play</button>
-    <button id = "reset" onclick="reset()">Reset</button>
-</div>
-<br>
-<div id="time" style ="display: none;">Timer: <p id="timer"></p></div>
+    <div><h1>SLIDE PUZZLE GAME</h1></div>
+    <div>   
+        <div>
+            <h2>Choose picture:</h2>
+            <select id="picture">
+                <option value = "pic1">Pic1</option>
+                <option value = "pic2">Pic2</option>
+                <option value = "pic3">Pic3</option>
+                <option value = "pic4">Pic4</option>
+            </select>
+        </div>
 
-<div id="shuffle">
-    <div class="shuffle" ><button>Shuffle</button></div>
+    <div>
+            <h2>Choose Size:</h2>
+            <select id="size">
+                <option value = "3">3x3</option>
+                <option value = "4">4x4</option>
+                <option value = "5">5x5</option>
+            </select>
+    </div>
+    </div>
+
+    <div>
+        <button id = "play" onclick="play()">Play</button>
+        <button id = "reset" onclick="reset()">Reset</button>
+    </div>
+
+
+    <div id="time"><p id="timer"></p></div>
+
+    <div id="shuffle">
+        <div class="shuffle" ><button>Shuffle</button></div>
+    </div>
 </div>
-<br>
-<br>
-</div>
+
+
 
 <script src="fifteen.js"></script>
+
+<div id="w3c">
+    <a href="https://jigsaw.w3.org/css-validator/"><img src="w3c-css.png" alt="Valid CSS"></a>
+    <a href="https://validator.w3.org/"><img src="w3c-xhtml.png" alt="Valid HTML"></a>
+</div>
 
 </body>
 </html>
