@@ -71,8 +71,8 @@ var cols = document.getElementById("size").value;
     }
     if (imageChoice == "pic2") {
         image = [{
-            src: "images/edrampage.jpg",
-            title: "Edrampage"
+            src: "images/sonic.jpg",
+            title: "Sonic"
         }];
     }
     if (imageChoice == "pic3") {
@@ -83,7 +83,7 @@ var cols = document.getElementById("size").value;
     }
     if (imageChoice == "pic4") {
         image = [{
-            src: "images/Curry.png",
+            src: "images/birdd.jpg",
             title: "Curry"
         }];
     }
