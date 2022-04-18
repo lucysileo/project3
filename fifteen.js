@@ -1,3 +1,4 @@
+"use strict";
 var game;
 var totalSeconds = 0;
 var timerVar;
